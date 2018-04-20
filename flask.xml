@@ -1,0 +1,52 @@
+<templateSet group="flask">
+  <template name="flask_model_field_id" value="id = db.Column(db.Integer(), primary_key=True)&#10;" description="field id" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flask_model_field_string" value="string = db.Column(db.String(255))&#10;" description="field string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flask_model" value="class User(db.Model):&#10;    id = db.Column(db.Integer(), primary_key=True)&#10;    username = db.Column(db.String(255))&#10;    password = db.Column(db.String(255))&#10;&#10;    def __init__(self, username):&#10;        self.username = username&#10;&#10;    def __repr__(self):&#10;        return &quot;&lt;User `{}`&gt;&quot;.format(self.username)&#10;" description="model" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flask_model_field_text" value="text = db.Column(db.Text())&#10;" description="field text" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flask_model_field_integer" value="integer = db.Column(db.Integer())&#10;" description="field integer" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flask_model_field_float" value="float = db.Column(db.Float())&#10;" description="field float" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flask_model_field_boolean" value="boolean = db.Column(db.Boolean())&#10;" description="field boolean" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flask_model_field_date" value="date = db.Column(db.Date())&#10;" description="field date" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flask_model_field_datetime" value="datetime = db.Column(db.Datetime())&#10;" description="field datetime" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flask_model_field_time" value="time = db.Column(db.Time())&#10;" description="field time" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
